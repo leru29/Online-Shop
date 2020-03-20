@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop/Poruči</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="search-box">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <input class="box" type="search" placeholder="Pretraži">
+            <span class="input-img"><img src="img/magnifying-glass.png"></span>
+        </div>
+         <div class="menu-bar">
+            <ul>
+                <li><img src="img/home.png"><br><a href="index.html">Početna</a></li>
+                <li><img src="img/smartphone-call.png"><br><a href="proizvodi.html">Proizvodi</a></li>
+                <li><img src="img/shopping-cart-empty-side-view.png"><br><a href="korpa.html">Korpa</a></li>
+                <li><img src="img/delivering.png"><br><a href="poruci.html">Poruči</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle">
+            <h3>Potvrdi kupovinu</h3>
+        </div>
+        <div class="content">
+            <table class="big-table">
+                <tr>
+                    <td><img src="img/delete-cross.png" class="icon"><img src="img/imgA8.jpg" class="phone"><span>Xiaomi Mi A8</span></td>
+                    <td><input type="number" class="quantity" name="quantity" min="1" max="10" value="1"></td>
+                    <td>600KM</td>
+                </tr>
+                <tr>
+                    <td><img src="img/delete-cross.png" class="icon"><img src="img/imgA-7.jpg" class="phone"><span>Xiaomi Mi A7</span></td>
+                    <td><input type="number" class="quantity" name="quantity" min="1" max="10" value="1"></td>
+                    <td>500KM</td>
+                </tr>
+                <tr>
+                    <td><img src="img/delete-cross.png" class="icon"><img src="img/imgA-6.jpg" class="phone"><span>Xiaomi Mi A6</span></td>
+                    <td><input type="number" class="quantity" name="quantity" min="1" max="10" value="1"></td>
+                    <td>450KM</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>UKUPNO</td>
+                    <td>1550KM</td>
+                </tr>
+            </table>
+        </div>
+        <div class="shop">
+            <form name="registration" onsubmit="return check();">
+
+                <label for="firstname">Ime</label>
+                <input type="text" name="firstname" id="firstname" pattern="^[a-zA-Z]+$" title="Možete koristiti samo slova"><br>
+
+                <label for="lastname">Prezime</label>
+                <input type="text" name="lastname" id="lastname" pattern="^[a-zA-Z]+$" title="Možete koristiti samo slova"><br>
+
+                <label for="address">Adresa</label>
+                <input type="text" name="adresa" id="address"><br>
+                
+                <label for="phone">Broj Telefona</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" title="Možete koristiti devet brojeva. Primjer validnog broja telefona 065333555"><br>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Primjer validnog emaila: marko_markovic@gmail.com"><br>
+
+                <input type="submit" name="submit" value="Potvrdi kupovinu">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container content">
+            <div class="row">
+                <div class="col-one">
+                    <h1>O NAMA</h1>
+                    <p>Naš tim čine mladi ljudi koji<br> dijele strast i ljubav prema <br>IT tehnologijama. Vaše vrijeme <br>nam je izuzetno bitno i zato<br> se trudimo da iskustvo online<br> shopping-a bude savršeno.</p>
+                </div>
+                <div class="col-two">
+                    <h1>LINKOVI</h1>
+                    <p>Dostava</p>
+                    <p>Povrat artikala</p>
+                    <p>Zaštita privatnosti podataka</p>
+                    <p>Uslovi korištenja</p>
+                    <p>Najčeće postavljana pitanja</p>
+                </div>
+                <div class="col-three">
+                    <h1>PRATITE NAS</h1>
+                    <img src="img/facebook.png" alt="Facebook">
+                    <img src="img/instagram.png" alt="Instagram">
+                </div>
+            </div>
+        </div>
+        <div>
+        <p class="copyright">Copyright&copy; | Željka Marjanović |</p>
+        </div>
+    </div>
+</body>
+</html>
